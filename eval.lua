@@ -178,5 +178,5 @@ end
 
 if opt.dump_json == 1 then
   -- dump the json
-  utils.write_json('vis/vis.json', split_predictions)
+  utils.write_json(string.format("%s/vis.json", opt.image_folder), split_predictions)
 end
